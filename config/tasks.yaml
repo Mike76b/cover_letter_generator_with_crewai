@@ -1,0 +1,118 @@
+requirement_gathering:
+  description: >
+    From the job post provided your first task is to focus on 
+    extracting the personal traits that the recruiter is looking for.
+    Your second task is to clearly define the set of tasks that
+    the recruiter is expecting to be done.
+    Your third task is to accurately identify the technical requirements,
+    meaning knowledge about certain programming languages, data modeling 
+    and frameworks, as well as identify software tools used.
+    Your fourth task is to look for ATS/keyword patterns used within the 
+    job post provided.
+    Your fifth and last task is to create a report with all the meaningful 
+    information you gathered. Use the read_job_post tool to read the job post.
+    
+  expected_output: >
+    A well structured report outlining the results of your findings 
+    ensuring it is accurate and precise.
+
+strategy_definition:
+  description: >
+    Considering the information provided about the job post
+    and the information provided in the candidate's resume, your first 
+    task is to do your best effort identifying all alignments between
+    these two sources of information.
+    Then, your second task is to identify the gaps between these two
+    sources of information.
+    Your third task will be suggesting ATS/keyword patterns that are 
+    aligned with both the information provided about the job post and 
+    candidate's resume so that your report can be shaped in such 
+    a way that it will increase the candidate's chances of standing 
+    out from other candidates. 
+    Ensure these suggestions are based on honest, truthful findings.
+    Use the read_resume tool to read the candidate's resume.
+    
+  expected_output: >
+    A report containing high-quality information and insights about the 
+    way that the candidate cover recruiter's expectations along with 
+    ATS/keyword pattern suggestions that are convenient for this specific 
+    case, and also information regarding the mismatches found. Your 
+    report is built considering that it will be used as a source of 
+    information to write a cover letter that the candidate will use when 
+    applying for jobs.
+    
+technical_skills_management:
+  description: >
+    From the job post, identify all technical skills and tools associated 
+    to the role. Also, identify the tasks assignment associated to the role.
+    Identify the relevance given in the job post to each of those skills, 
+    tools and tasks, so that you can report about this relationship, which is key.
+    Identify ATS/keyword pattern used in the job post associated to the role.
+    Use the read_job_post tool to read the job post.
+    
+  expected_output: >
+    A report in which you provide clear, truthful notes, ordered by importance 
+    level, about the set of skills, tools and task assignments that the 
+    recruiter consider relevant in this specific job post. Your report 
+    also includes ATS/keyword pattern identified in the job post that are 
+    relevant for the role.
+
+alignment_optimization:
+  description: >
+    Carefully analyze the candidate's resume to identify candidate's technical
+    skills, tools and tasks developed. Match candidate's projects, tech stack, and 
+    outcomes to each key requirement from the information provided by the 
+    report in the context, whenever is truthful. For those technical 
+    skills, tools or requirements that are present in the context's report but absent in 
+    candidate's skills' set look for honest and truthful similarities within the 
+    candidate's resume. In case that you don't find similarities consider them as 
+    gaps and advise about it. Advise on how to handle overqualification or 
+    underqualification situations. Provide suggestions about ATS/keyword pattern 
+    to use that are aligned with both the notes provided and the resume.
+    Use the read_resume tool to read the candidate's resume.
+    
+  expected_output: >
+    A meticulously created report informing about your findings and suggestions. 
+    These MUST be oriented towards the elaboration of a cover letter that the 
+    candidate will use when applying for jobs. Your report includes one section 
+    for each of the four main areas to be analyzed, these are strong or good 
+    alignments found, mid-level alignments found, weak alignments or gaps, and 
+    suggested ATS/keyword pattern to use.
+
+cover_letter_development:
+  description: >
+    Considering the information provided in the context: 
+    Draft the cover letter structure creating a one-page outline with the 
+    following sections in this specified order: one introductory paragraph,
+    one paragraph to talk about the technical aspects, one paragraph to 
+    talk about tasks and assignments, one last paragraph to create hook and
+    engagement in which candidate's personal traits and profile MUST be 
+    considered. Review the cover letter for the first time in order to weave 
+    one or two company-specific signals (mission, product, tech stack) in a 
+    short paragraph. Review the cover letter a second time to optimize it for 
+    recruiter/ATS scanning, placing high-impact keywords in prominent positions 
+    (opening, headings, first lines of paragraphs). Maintain professional 
+    warmth and brevity. Review the cover letter for the last time tailoring tone 
+    and voice for role level, using confident language for Senior Data Engineer
+    and Data Engineer roles; slightly more consultative and impact-driven 
+    phrasing for AI Engineer positions. 
+    
+  expected_output: >
+    An error-free cover letter, one page long or less, written in first 
+    person point of view, that is consistent with itself and with the 
+    information provided about both candidate and job post, honest and 
+    focused on demonstrating the true value the candidate has and also 
+    gracefully addressing the weak points found on the candidate's side 
+    that are important to the recruiter. Avoid mentioning weak points that 
+    are not relevant to the recruiter. 
+
+cover_letter_editing:
+  description: >
+    Taking the cover letter provided in the context:
+    Carefully proofread the cover letter ensuring all errors are found and 
+    amended. Also ensure consistency in tone and facts. Give a professional
+    polish.
+
+  expected_output: >
+    A cover letter that is easy to read, with smooth, natural transitions.
+    Its reading is light and helps progressing in the recruitment process.
